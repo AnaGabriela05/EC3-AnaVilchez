@@ -19,14 +19,14 @@ public class Hospital {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id_hospítal;
+	private Integer id_hospital;
 	private String nombre;
 	private String descripcion;
 	private String distrito;
 	
 	@ManyToMany(cascade = {CascadeType.PERSIST,CascadeType.MERGE})
 	@JoinTable(
-		name="producto_cliente",
+		name="hospital_cliente",
 		joinColumns =
 			@JoinColumn(
 					name="id_cliente", 
@@ -43,11 +43,11 @@ public class Hospital {
 	)
 	private List<Cliente> cliente = new ArrayList<Cliente>();
 	
-	public Integer getId_hospítal() {
-		return id_hospítal;
+	public Integer getId_hospital() {
+		return id_hospital;
 	}
-	public void setId_hospítal(Integer id_hospítal) {
-		this.id_hospítal = id_hospítal;
+	public void setId_hospital(Integer id_hospital) {
+		this.id_hospital = id_hospital;
 	}
 	public String getNombre() {
 		return nombre;

@@ -33,7 +33,7 @@ public class HospitalServicioImpl implements HospitalServicio{
 		h.setNombre(hospital.getNombreDTO());
 		h.setDescripcion(hospital.getDescripcionDTO());
 		h.setDistrito(hospital.getDistritoDTO());
-		h.setId_hospítal(hospital.getId_hospítalDTO());
+		h.setId_hospital(hospital.getId_hospitalDTO());
 		repo.saveAndFlush(h);
 	}
 
@@ -55,7 +55,7 @@ public class HospitalServicioImpl implements HospitalServicio{
 			h.setNombreDTO(hospital.getNombre());
 			h.setDescripcionDTO(hospital.getDescripcion());
 			h.setDistritoDTO(hospital.getDistrito());
-			h.setId_hospítalDTO(hospital.getId_hospítal());
+			h.setId_hospitalDTO(hospital.getId_hospital());
 			
 			hospitalDTOlist.add(h);
 		}
@@ -70,7 +70,7 @@ public class HospitalServicioImpl implements HospitalServicio{
 		h.setNombreDTO(hospital.get().getNombre());
 		h.setDescripcionDTO(hospital.get().getDescripcion());
 		h.setDistritoDTO(hospital.get().getDistrito());
-		h.setId_hospítalDTO(hospital.get().getId_hospítal());
+		h.setId_hospitalDTO(hospital.get().getId_hospital());
 		return h;
 	}
 

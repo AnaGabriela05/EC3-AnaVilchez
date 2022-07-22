@@ -26,7 +26,7 @@ public class Cliente {
 	
 	@ManyToMany(mappedBy = "cliente", cascade = {CascadeType.PERSIST,CascadeType.MERGE}) 
 	private List<Hospital> hospital = new ArrayList<Hospital>();
-	@OneToOne(mappedBy = "cliente")
+	@OneToOne(mappedBy = "clientes")
 	private UsuarioCliente usuarioCliente;
 	
 	public Integer getId_cliente() {
