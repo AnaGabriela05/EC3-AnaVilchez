@@ -23,7 +23,7 @@ public class UsuarioCliente {
 	@OneToOne
 	@JoinColumn(name="id_cliente",nullable=false,unique=true,
 	foreignKey = @ForeignKey(foreignKeyDefinition = "foreign key(id_cliente) references cliente(id_cliente)"))
-	private Cliente cliente;
+	private Cliente clientes;
 	
 	public Integer getId_usuario() {
 		return id_usuario;
@@ -48,6 +48,12 @@ public class UsuarioCliente {
 	}
 	public void setRol(String rol) {
 		this.rol = rol;
+	}
+	public Cliente getClientes() {
+		return clientes;
+	}
+	public void setClientes(Cliente clientes) {
+		this.clientes = clientes;
 	}
 	
 }

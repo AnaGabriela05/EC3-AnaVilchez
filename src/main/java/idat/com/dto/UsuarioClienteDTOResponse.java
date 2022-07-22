@@ -2,39 +2,39 @@ package idat.com.dto;
 
 public class UsuarioClienteDTOResponse {
 	private Integer id_usuario;
-	private String usuario;
-	private String password;
-	private String rol;
-	private String id_cliente;
-	
+	private String usuarioDTO;
+	private String passwordDTO;
+	private String rolDTO;
+	private Integer id_clienteDTO;
 	public Integer getId_usuario() {
 		return id_usuario;
 	}
 	public void setId_usuario(Integer id_usuario) {
 		this.id_usuario = id_usuario;
 	}
-	public String getUsuario() {
-		return usuario;
+	public String getUsuarioDTO() {
+		return usuarioDTO;
 	}
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
+	public void setUsuarioDTO(String usuarioDTO) {
+		this.usuarioDTO = usuarioDTO;
 	}
-	public String getPassword() {
-		return password;
+	public String getPasswordDTO() {
+		return passwordDTO;
 	}
-	public void setPassword(String password) {
-		this.password = password;
+	public void setPasswordDTO(String passwordDTO) {
+		this.passwordDTO = passwordDTO;
 	}
-	public String getRol() {
-		return rol;
+	public String getRolDTO() {
+		return rolDTO;
 	}
-	public void setRol(String rol) {
-		this.rol = rol;
+	public void setRolDTO(String rolDTO) {
+		this.rolDTO = rolDTO;
 	}
-	public String getId_cliente() {
-		return id_cliente;
+	public Integer getId_clienteDTO() {
+		return id_clienteDTO;
 	}
-	public void setId_cliente(String id_cliente) {
-		this.id_cliente = id_cliente;
+	public void setId_clienteDTO(Integer id_clienteDTO) {
+		this.id_clienteDTO = id_clienteDTO;
 	}
+	
 }

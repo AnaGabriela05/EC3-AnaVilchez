@@ -7,8 +7,8 @@ import idat.com.dto.UsuarioClienteDTOResponse;
 
 public interface UsuarioClienteServicio {
 
-	public void guardarUsuarioCliente(UsuarioClienteDTORequest UsuarioCliente);
-	public void editarUsuarioCliente(UsuarioClienteDTORequest UsuarioCliente);
+	public void guardarUsuarioCliente(UsuarioClienteDTORequest usuarioCliente);
+	public void editarUsuarioCliente(UsuarioClienteDTORequest usuarioCliente);
 	
 	public void eliminarUsuarioCliente(Integer id);
 	
